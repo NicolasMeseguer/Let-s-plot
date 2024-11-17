@@ -1,37 +1,46 @@
 {
     "clusters": [
         {
-            "name": "Benchmark A",
+            "name": "Elementwise",
             "data": [
-                0.5,
-                0.75,
-                0.545,
-                0.25
+                0.42,
+                1,
+                0.81,
+                0.99
             ]
         },
         {
-            "name": "Benchmark B",
+            "name": "Elementwise K",
             "data": [
-                0.75,
-                0.5,
-                0.25,
+                0.55,
+                1,
+                0.76,
+                0.99
+            ]
+        },
+        {
+            "name": "Matrix-Vector",
+            "data": [
+                0.17,
+                1,
+                0.35,
                 0.95
             ]
         },
         {
-            "name": "Benchmark C",
+            "name": "Matrix-Matrix",
             "data": [
-                0.7,
-                0.5,
-                0.2,
-                0.1
+                0.17,
+                1,
+                0.59,
+                0.96
             ]
         }
     ], 
     "series" : [
-        "Intel Processor",
-        "AMD Processor",
-        "NVIDIA GPU",
-        "AMD GPU"
+        "Worst-Case",
+        "Best-Case",
+        "Average-Case",
+        "QCU"
     ]
 }
