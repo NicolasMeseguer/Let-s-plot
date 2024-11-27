@@ -84,6 +84,8 @@ def gen_bar_chart(args : argparse.Namespace):
     chart_template['graphs'][0]['legend'][0]['elems'] = series_names
     chart_template['graphs'][0]['order'] = series_names
 
+    print(f'Generating bar chart with template: {chart_template}')
+
     # Dump the chart template into a temporary file
     with tempfile.NamedTemporaryFile(mode='w', delete=False) as chart_file:
         json.dump(chart_template, chart_file)
