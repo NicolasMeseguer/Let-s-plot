@@ -1,0 +1,46 @@
+{
+    "clusters": [
+        {
+            "name": "AlbertV2",
+            "data": [
+                0.30,
+                0.41,
+                0.44
+            ]
+        },
+        {
+            "name": "MobileBert",
+            "data": [
+                0.77,
+                0.70,
+                0.69
+            ]
+        },
+        {
+            "name": "T5 Small",
+            "data": [
+                0.48,
+                0.60,
+                0.61
+            ]
+        },
+        {
+            "name": "Whisper-Tiny",
+            "data": [
+                0.53,
+                0.40,
+                0.68
+            ]
+        }
+    ], 
+    "series" : [
+        "NoTMA",
+        "TMA Queue",
+        "QuCo"
+    ],
+    "series_hatches" : [
+        "o",
+        "x",
+        "+"
+    ]
+}

@@ -31,6 +31,7 @@ def gen_bar_data(data : json, args : argparse.Namespace):
     series_idx = {x: idx for idx, x in enumerate(data['series'])}
     
     bar_data = []
+    series_marker = data['series_hatches'] if 'series_hatches' in data else [''] * len(data['series'])
     for cluster in data['clusters']:
         for serie in data['series']:
             bar_data.append({
@@ -39,7 +40,7 @@ def gen_bar_data(data : json, args : argparse.Namespace):
                 'value': serie,
                 'color': PALETTES[args.palette][series_idx[serie]],
                 'edge_color': 'black',
-                'marker': '',
+                'marker': series_marker[series_idx[serie]],
                 'legend': True
             })
             
@@ -52,7 +53,7 @@ def gen_bar_data(data : json, args : argparse.Namespace):
                 'value': serie,
                 'color': PALETTES[args.palette][series_idx[serie]],
                 'edge_color': 'black',
-                'marker': '',
+                'marker': series_marker[series_idx[serie]],
                 'legend': True
             })
 
@@ -83,8 +84,6 @@ def gen_bar_chart(args : argparse.Namespace):
     chart_template['graphs'][0]['axis']['x']['max'] = len(cluster_names) - 0.5
     chart_template['graphs'][0]['legend'][0]['elems'] = series_names
     chart_template['graphs'][0]['order'] = series_names
-
-    print(f'Generating bar chart with template: {chart_template}')
 
     # Dump the chart template into a temporary file
     with tempfile.NamedTemporaryFile(mode='w', delete=False) as chart_file:

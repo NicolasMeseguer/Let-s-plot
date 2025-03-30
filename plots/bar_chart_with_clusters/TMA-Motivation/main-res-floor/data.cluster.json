@@ -1,0 +1,86 @@
+{
+    "clusters": [
+        {
+            "name": "ElementwiseK ",
+            "data": [
+                1.55,
+                1.33,
+                1.57,
+                1.27,
+                0.98,
+                0.97
+            ]
+        },
+        {
+            "name": "Elementwise",
+            "data": [
+                1.29,
+                1.27,
+                1.40,
+                1.19,
+                0.99,
+                0.98
+            ]
+        },
+        {
+            "name": "Sumvectors",
+            "data": [
+                1.45,
+                1.32,
+                1.43,
+                1.14,
+                1.001,
+                1.01
+            ]
+        },
+        {
+            "name": "Dot-Product",
+            "data": [
+                1.09,
+                0.90,
+                1.38,
+                1.00,
+                1.00,
+                0.99
+            ]
+        },
+        {
+            "name": "Matrix-Vector",
+            "data": [
+                1.90,
+                1.69,
+                1.42,
+                1.49,
+                1.21,
+                1.23
+            ]
+        },
+        {
+            "name": "Matrix-Matrix",
+            "data": [
+                4.51,
+                4.42,
+                3.38,
+                3.43,
+                2.60,
+                2.67
+            ]
+        }
+    ], 
+    "series" : [
+        "NoTMA Not-Tuned",
+        "NoTMA Fine-Tuned",
+        "TMA-Like Not-Tuned",
+        "TMA-Like Informed-Tune",
+        "TMA-Like Fine-Tuned",
+        "QuCo"
+    ],
+    "series_hatches" : [
+        "//",
+        "--",
+        "..",
+        "xx",
+        "\\\\",
+        "||"
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "clusters": [
+        {
+            "name": "ElementwiseK ",
+            "data": [
+                0.74,
+                0.94,
+                0.94
+            ]
+        },
+        {
+            "name": "Elementwise",
+            "data": [
+                0.83,
+                0.99,
+                0.96
+            ]
+        },
+        {
+            "name": "Sumvectors",
+            "data": [
+                0.82,
+                0.99,
+                0.94
+            ]
+        },
+        {
+            "name": "Dot-Product",
+            "data": [
+                0.79,
+                0.99,
+                0.99
+            ]
+        },
+        {
+            "name": "Matrix-Vector",
+            "data": [
+                0.55,
+                0.82,
+                0.82
+            ]
+        },
+        {
+            "name": "Matrix-Matrix",
+            "data": [
+                0.53,
+                0.85,
+                0.79
+            ]
+        }
+    ], 
+    "series" : [
+        "NoTMA",
+        "TMA Queue",
+        "QuCo"
+    ],
+    "series_hatches" : [
+        "//",
+        "--",
+        ".."
+    ]
+}

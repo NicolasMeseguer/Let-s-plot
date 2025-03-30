@@ -1,0 +1,38 @@
+{
+    "clusters": [
+        {
+            "name": "Elementwise",
+            "data": [
+                1,
+                1.01,
+                1.21
+            ]
+        },
+        {
+            "name": "Matrix-Vector",
+            "data": [
+                1.14,
+                1,
+                1.04
+            ]
+        },
+        {
+            "name": "Matrix-Matrix",
+            "data": [
+                1.21,
+                1.07,
+                1
+            ]
+        }
+    ], 
+    "series" : [
+        "Elementwise Best Configuration",
+        "Matrix-Vector Best Configuration",
+        "Matrix-Matrix Best Configuration"
+    ],
+    "series_hatches" : [
+        "o",
+        "x",
+        "+"
+    ]
+}

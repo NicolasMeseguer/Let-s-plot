@@ -1,7 +1,7 @@
 {
     "rows": 1,
     "columns": 1,
-    "figsize": "10,5",
+    "figsize": "10,2",
     "graphs": [ 
         {
             "dx": 0,
@@ -13,17 +13,18 @@
             "axis": {
                 "x": {
                     "label": "",
+                    "args_labels": {"fontsize": 11},
                     "ticks": "TO BE FILLED WITH A LIST OF NUMBER FROM 0 to N-1 MODELS",
                     "ticks_label": "TO BE FILLED WITH CLUSTER NAMES",
                     "max": "TO FILL WITH N-1 (nCLUSTERS) + 0.5",
                     "min": -0.5
                 },
                 "y": {
-                    "label": "Normalized Execution Time",
-                    "ticks": [0.0, 1.0, 2.0],
-                    "minor_ticks": [0.0, 0.5, 1.0, 1.5, 2.0],
-                    "max": 3.0,
-                    "min": 0.0,
+                    "label": "Normalized \n Execution Time",
+                    "ticks": [0.0, 1.0, 2.0, 3.0, 4.0, 5.0],
+                    "minor_ticks": [0.5, 1.5, 2.5, 3.5, 4.5],
+                    "max": 4.7,
+                    "min": 0.5,
                     "grid": true,
                     "subgrid": true
                 }
@@ -33,10 +34,9 @@
                     "elems": ["TO BE FILLED WITH SERIES NAMES"],
                     "args": {
                         "edgecolor": "white",
-                        "fancybox": true,
-                        "loc": "upper left",
-                        "bbox_to_anchor": [0.0, 1.0],
-                        "ncol": 2
+                        "fancybox": false,
+                        "loc": [0.0, 1.01],
+                        "ncol": 3
                     }
                 }
             ],

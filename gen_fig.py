@@ -23,6 +23,9 @@ import numpy as np
 import json, sys
 import argparse
 
+# Globally set the font size
+# plt.rcParams['font.size'] = 12
+
 ###############################################################################
 # Auxiliary functions
 ###############################################################################
